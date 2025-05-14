@@ -134,17 +134,25 @@ Converts strings like "5 Years and 3 Months" to total months
 
 - Boxplots showing relationships between features and credit score
 ## 📁 Project Structure
-Credit-Score-Prediction/
-├── deployment/
-│ ├── app.py
-│ ├── preprocessing.py
-│ └── svc.pkl
-│
-├── train.csv
-├── test_100.csv
-├── preprocessed_data.csv
-├── EDA.ipynb
-└── pipeline and model training.ipynb
+
+### Key Files Explained
+
+| File/Folder | Purpose |
+|-------------|---------|
+| `deployment/app.py` | Streamlit web application for predictions |
+| `deployment/preprocessing.py` | Custom scikit-learn transformers for data cleaning |
+| `deployment/svc.pkl` | Serialized trained SVM model |
+| `data/train.csv` | Original training data (20K+ records) |
+| `data/test_100.csv` | Sample test data for quick verification |
+| `notebooks/EDA.ipynb` | Contains visualizations and data insights |
+| `notebooks/pipeline_and_model_training.ipynb` | Full model training pipeline |
+
+### How to Use This Structure
+
+1. **For Prediction**:
+   ```bash
+   cd deployment
+   streamlit run app.py
 
 
 ## Installation
