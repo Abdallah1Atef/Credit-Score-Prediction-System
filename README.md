@@ -60,11 +60,11 @@ Single Prediction:
 Fill out the form in the sidebar
 
 Click "Predict Credit Score"
-Output Interpretation
+**Output Interpretation**
 Credit Score	Color Code	Description
-Good	🟢 Green	Excellent creditworthiness
-Standard	🟡 Yellow	Average credit profile
-Poor	🔴 Red	High-risk borrower
+- Good	    🟢 Green	Excellent creditworthiness
+- Standard	🟡 Yellow	Average credit profile
+- Poor	    🔴 Red	High-risk borrower
 
 View the prediction and probabilities
 
@@ -81,58 +81,71 @@ Credit History Age Conversion:
 
 Converts strings like "5 Years and 3 Months" to total months
 
-Numeric Cleaning:
+**Numeric Cleaning:**
 
-Removes special characters from numeric fields
+- Removes special characters from numeric fields
 
-Handles outliers using IQR method
+- Handles outliers using IQR method
 
-Categorical Processing:
+**Categorical Processing:**
 
-Standardizes category strings
+- Standardizes category strings
 
-Imputes missing values using group modes
+- Imputes missing values using group modes
 
-Mixed encoding (ordinal + one-hot)
+**Mixed encoding (label rof ordinal features + one-hot for nominal features )**
 
-Feature Selection:
+**Feature Selection:**
 
-Selects top features based on ANOVA F-values
+- Selects top features based on ANOVA F-values
 
-Removes highly correlated features
+- Removes highly correlated features
 
-Scaling & Dimensionality Reduction:
+- Scaling & Dimensionality Reduction:
 
-StandardScaler for normalization
+- StandardScaler for normalization
 
-PCA for feature reduction
+- PCA for feature reduction
 
-Exploratory Data Analysis
-Key insights from the EDA:
+## Exploratory Data Analysis
+- Key insights from the EDA:
 
-Class Distribution:
+**Class Distribution:**
 
-Standard: 53.2%
+- Standard: 53.2%
 
-Poor: 31.4%
+- Poor: 31.4%
 
-Good: 15.4%
+- Good: 15.4%
 
-Important Correlations:
+**Important Correlations:**
 
-Credit_History_Age ↔ Credit_Score (0.37)
+- Credit_History_Age ↔ Credit_Score (0.37)
 
-Interest_Rate ↔ Credit_Score (-0.48)
+- Interest_Rate ↔ Credit_Score (-0.48)
 
-Outstanding_Debt ↔ Credit_Score (-0.39)
+- Outstanding_Debt ↔ Credit_Score (-0.39)
 
-Visualizations:
+**Visualizations:**
 
-Distribution plots for all numeric features
+- Distribution plots for all numeric features
 
-Correlation heatmap
+- Correlation heatmap
 
-Boxplots showing relationships between features and credit score
+- Boxplots showing relationships between features and credit score
+## 📁 Project Structure
+📦 Credit-Score-Prediction/
+│
+├── 📂 deployment/
+│   ├── 📄 app.py
+│   ├── 📄 preprocessing.py
+│   └── 📄 svc.pkl
+│
+├── 📄 train.csv
+├── 📄 test_100.csv
+├── 📄 preprocessed_data.csv
+├── 📄 EDA.ipynb
+└── 📄 pipeline and model training.ipynb
 
 
 ## Installation
