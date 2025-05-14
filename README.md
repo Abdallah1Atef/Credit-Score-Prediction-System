@@ -44,7 +44,14 @@ The system uses a sophisticated data preprocessing pipeline and SVM models with 
   - Batch prediction via CSV upload
   - Interactive visualization of results
   - Credit improvement tips
-    
+
+## Usage
+
+### Running the Application
+
+1. **Launch the Streamlit app**:
+   ```bash
+   streamlit run app.py
 The app will launch in your default browser at http://localhost:8501
 
 Using the Prediction System
@@ -53,6 +60,11 @@ Single Prediction:
 Fill out the form in the sidebar
 
 Click "Predict Credit Score"
+Output Interpretation
+Credit Score	Color Code	Description
+Good	🟢 Green	Excellent creditworthiness
+Standard	🟡 Yellow	Average credit profile
+Poor	🔴 Red	High-risk borrower
 
 View the prediction and probabilities
 
