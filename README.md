@@ -134,18 +134,17 @@ Converts strings like "5 Years and 3 Months" to total months
 
 - Boxplots showing relationships between features and credit score
 ## 📁 Project Structure
-📦 Credit-Score-Prediction/
+Credit-Score-Prediction/
+├── deployment/
+│ ├── app.py
+│ ├── preprocessing.py
+│ └── svc.pkl
 │
-├── 📂 deployment/
-│   ├── 📄 app.py
-│   ├── 📄 preprocessing.py
-│   └── 📄 svc.pkl
-│
-├── 📄 train.csv
-├── 📄 test_100.csv
-├── 📄 preprocessed_data.csv
-├── 📄 EDA.ipynb
-└── 📄 pipeline and model training.ipynb
+├── train.csv
+├── test_100.csv
+├── preprocessed_data.csv
+├── EDA.ipynb
+└── pipeline and model training.ipynb
 
 
 ## Installation
